@@ -1,0 +1,87 @@
+h1 {
+  font-size: 16px;
+}
+
+.product {
+  padding: 20px;
+  margin: 20px;
+  background-color: aliceblue;
+}
+
+.productTitle {
+  font-size: 14px;
+}
+
+.productPrice {
+  font-size: 12px;
+}
+
+.productAmount {
+  font-size: 12px;
+}
+
+.totalPricesMassage {
+  display: block;
+}
+.images {
+    width: 76%;
+    float: right;
+    padding: 26px 3px;
+}
+
+.productInfo ,.productIamge {
+  display: inline-block;
+  width: 35%;
+}
+.productInfo {
+  position: relative;
+  bottom: 50px;
+
+}
+.gap {
+  display: inline-block;
+  width: 20%;
+  height: 150px;
+}
+.bin {
+  display: inline-block;
+  height: 27px;
+  width: 10%;
+  position: relative;
+  bottom: 50px;
+  background: url("./imgs/bin.png")  no-repeat center;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 450px) {
+  .productInfo, .productIamge {
+    display: inline-block;
+    width: 100%;
+ 
+}
+.gap {
+  display: none;
+}
+.productIamge {
+  display: inline-block;
+}
+.images {
+  width: 100%;
+}
+.productInfo {
+  bottom: 0px;
+  text-align: center;
+}
+.bin{
+position: static;
+}
+}
+
+/*
+.first {
+    background-color: yellow;
+}
+
+.secound {
+    background-color: brown;
+} */
