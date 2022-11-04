@@ -40,7 +40,7 @@ products.forEach((product, i) => {
     })
   );
 });
-console.log(products);
+
 
 addingNewProduct({
   title: "test",
@@ -214,15 +214,17 @@ function createElement({
 // TODO: how to add to an array product a new object with a function
 function addingNewProduct({ title, desc, price, img }) {
   let lastElement = +products.length;
+  debugger
   products.push({
-    id: lastElement,
     productTitle: title,
     productDescription: desc,
     productPrice: price,
     img: img,
+    id: lastElement,
   });
+   return ProductsWarpper.appendChild(createNewProduct({title: title,disc:desc,price: price,img:img,id: lastElement}))
 }
-
+console.log(products);
 checkoutButton.addEventListener("click", renderCalculation);
 
 function renderCalculation() {
